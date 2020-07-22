@@ -1,3 +1,4 @@
+// home.scss - banner
 .banner-container {
     max-width: 1470px;
     height: 100vh;
@@ -6,7 +7,7 @@
 
 .banner-image {
     width: 100%;
-    // height: 600px;
+    height: 800px;
     filter: blur(8px);
 }
 
@@ -29,17 +30,21 @@
     font-size: 25px;
 }
 
+// home.scss - post
 .post {
     margin-left: 30px;
     margin-top: 40px;
-    height: 500px;
+    height: 850px;
 }
 
-.post p {
-    display: flex;
-    justify-content: center;
-    font-family: $font;
-    font-size: 40px;
+.post {
+    p {
+        display: flex;
+        justify-content: center;
+        font-family: $font;
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
 }
 
 .posts-container {
@@ -50,25 +55,28 @@
 .post-container {
     margin: 20px;
     width: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 300px;
-    border-radius: 30px;    
+    border-radius: 30px;
     height: 550px;
     padding: 10px;
+
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
 }
 
-.post-container:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.post-container {
+    img {
+        width: 300px;
+        height: 250px;
+        border-radius: 25px;
+    }
 }
 
-.post-container img {
-    width: 300px;
-    height: 250px;
-    border-radius: 25px;
-}
-
-.post-title, .readmore {
+.post-title,
+.readmore {
     margin-left: 100px;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -87,4 +95,84 @@
     margin-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.post-image {
+    width: 300px;
+    height: 250px;
+}
+
+.more-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 450px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.more {
+    width: 1000px;
+    justify-items: center;
+    font-family: $font;
+}
+
+.more-post {
+    margin-bottom: 15px;
+}
+
+.more {
+    a {
+        color: $link;
+        font-size: 25px;
+        text-decoration: none;
+        margin-left: 70px;
+        font-family: $font;
+        margin-bottom: 30px;
+    }
+}
+
+// home.scss - footer
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $black;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin-left: -32px;
+    margin-top: 105px;
+}
+
+.footer-ul,
+.footer-list {
+    display: block;
+    padding-left: 220px;
+    padding-top: 30px;
+}
+
+.footer-link {
+    color: $white;
+}
+
+.footer-link:hover {
+    color: $link;
+}
+
+// home.scss - description
+
+.description {
+    font-family: $font;
+    color: $black;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 1100px;
+    margin-left: 80px;
+}
+
+.main-description {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+    margin-bottom: 50px;
 }

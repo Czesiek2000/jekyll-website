@@ -1,3 +1,5 @@
+// navigation.scss - navigation
+
 .header {
     max-width: 1480px;
     height: 100px;
@@ -5,7 +7,6 @@
 
 .nav {
     width: 100%;
-    // background-color: #393D3F;
     background-color: $black;
     color: $white;
     display: flex;
@@ -26,14 +27,15 @@ ul {
     list-style: none;
     display: flex;
     padding-right: 42px;
-}
 
-ul li a {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #FDFDFF;
-    font-family:  $font;
-    font-size: 20px;
-
+    li {
+        a {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #FDFDFF;
+            font-family: $font;
+            font-size: 20px;
+        }
+    }
 }

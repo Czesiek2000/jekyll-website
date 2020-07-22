@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html%}
-    <body>
-        {% include navigation.html %}
+{% include head.html%}
 
-        {{ content }}
+<body>
+    {% include navigation.html %}
 
-        
-        {% include footer.html %}
-    </body>
+    <div class="container">
+        <img src="{{ page.img }}" alt="image" class="page-image">
+        <!-- <div class="image-description">This is image description</div> -->
+        <div class="page-title">{{ page.title }}</div>
+        <div class="page-info">
+            {{ page.pubdate }} {{ page.author }}
+        </div>
+        <div class="page-container">
+
+            <p>{{ content }}</p>
+        </div>
+    </div>
+
+
+    {% include footernav.html %}
+</body>
+
 </html>

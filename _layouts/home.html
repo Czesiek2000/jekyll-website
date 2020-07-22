@@ -14,56 +14,42 @@
         </div>
     </div>
 
-
     <div class="post">
-        <p>Newest posts</p>
+        <p class="page-description">Recent posts</p>
         <div class="posts-container">
+            {% for post in site.posts limit:3 %}
             <div class="post-container">
-                <img src="https://picsum.photos/200/300" alt="image" class="post-image">
-                <div class="post-title">Post 1 Title</div>
+                <img src="{{ post.img }}" alt="image" class="post-image">
+                <div class="post-title">{{ post.title }}</div>
                 <div class="post-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In mollitia, nobis est aspernatur optio
-                    dolorem
-                    nisi qui officiis quaerat, assumenda placeat, voluptatibus recusandae. Nemo voluptate accusamus
-                    labore
-                    consequatur eius, maiores quam. Nesciunt perferendis, omnis nulla iste ipsum sit mollitia,
-                    voluptatibus
-                    nam temporibus at deserunt reprehenderit ea consequatur consectetur fugiat voluptatem!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere officiis magni eaque dolores illo
+                    sit, doloremque reprehenderit iste officia. Quasi obcaecati nihil atque, a maiores odit perferendis
+                    unde corporis non, ipsa deserunt nam adipisci esse. Corporis fugiat aliquam necessitatibus
+                    distinctio. Mollitia deserunt maiores molestiae magni. Tempore quae asperiores consectetur alias!
                 </div>
-                <a href="/post1" class="readmore">Read more...</a>
+                <a href="{{ post.url }}" class="readmore">Read more...</a>
             </div>
-
-            <div class="post-container">
-                <img src="https://picsum.photos/201/300" alt="image" class="post-image">
-                <div class="post-title">Post 2 Title</div>
-                <div class="post-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In mollitia, nobis est aspernatur optio
-                    dolorem
-                    nisi qui officiis quaerat, assumenda placeat, voluptatibus recusandae. Nemo voluptate accusamus
-                    labore
-                    consequatur eius, maiores quam. Nesciunt perferendis, omnis nulla iste ipsum sit mollitia,
-                    voluptatibus
-                    nam temporibus at deserunt reprehenderit ea consequatur consectetur fugiat voluptatem!
-                </div>
-                <a href="/post2" class="readmore">Read more...</a>
-            </div>
-
-            <div class="post-container">
-                <img src="https://picsum.photos/202/300" alt="image" class="post-image">
-                <div class="post-title">Post 3 Title</div>
-                <div class="post-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sed officiis id suscipit impedit exercitationem quae placeat eveniet aperiam nobis. Magnam obcaecati repellat iure reprehenderit consequuntur corrupti doloremque neque officiis, autem alias. Numquam, laudantium. Animi nihil eveniet quis repellat quisquam tenetur omnis ut consectetur totam. Asperiores minima minus nulla tenetur.
-                </div>
-                <a href="/post3" class="readmore">Read more...</a>
-            </div>
+            {% endfor %}
 
 
+        </div>
+
+        <div class="more-container">
             <div class="more">
                 <div class="more-post">For more posts please visit recent post page</div>
-                <a href="/recent-posts">Recent posts</a>
+                <a href="/recent">Recent posts</a>
             </div>
         </div>
+
     </div>
+
+    <div class="description">
+        <p class="main-description">Blog description</p>
+        {{ site.description }}
+    </div>
+
+    {% include footernav.html %}
+
 
 
 

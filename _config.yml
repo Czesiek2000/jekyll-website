@@ -21,12 +21,13 @@
 title: Exmaple blog
 email: michal.czech00@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a description of the blog page
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quae voluptatibus quos obcaecati, sunt optio asperiores natus nihil voluptate? Fuga saepe sequi eveniet numquam assumenda repellat ea eligendi consectetur, asperiores voluptas quam accusantium eum animi minima facilis quasi deleniti voluptates nemo perferendis minus aut unde similique. Obcaecati laborum laudantium in harum perferendis qui, corrupti ex sapiente repellendus? Deserunt veniam, ipsam vero recusandae quidem nesciunt quam repellat, natus iure temporibus consectetur repudiandae ut cumque. Sed ad voluptatibus maiores voluptates nisi, aliquam odit, nostrum id tempora quae incidunt, ullam ipsam quisquam facilis tenetur a hic corrupti vel dolores. Ullam, pariatur consequatur. Facilis!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
 
+include: ['_pages']
 # Build settings
 theme: minima
 plugins:

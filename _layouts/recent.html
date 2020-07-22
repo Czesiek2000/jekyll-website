@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% include head.html %}
+<html>
+{% include navigation.html %}
+
+<body>
+        <div class="post">
+                <p class="page-description">Recent posts</p>
+                <div class="posts-container">
+                    {% for post in site.posts %}
+                    <div class="post-container">
+                        <img src="{{ post.img }}" alt="image" class="post-image">
+                        <div class="post-title">{{ post.title }}</div>
+                        <div class="post-description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere officiis magni eaque dolores illo
+                                sit, doloremque reprehenderit iste officia. Quasi obcaecati nihil atque, a maiores odit perferendis
+                                unde corporis non, ipsa deserunt nam adipisci esse. Corporis fugiat aliquam necessitatibus
+                                distinctio. Mollitia deserunt maiores molestiae magni. Tempore quae asperiores consectetur alias!
+                        </div>
+                        <a href="{{ post.url }}" class="readmore">Read more...</a>
+                    </div>
+                {% endfor %}
+                
+        </div>
+
+
+    {% include footernav.html %}
+
+</body>
+
+</html>
